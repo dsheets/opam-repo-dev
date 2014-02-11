@@ -3,7 +3,7 @@ maintainer: "contact@ocamlpro.com"
 homepage: "https://github.com/OCamlPro/opam2web"
 build: [
   [make]
-  [make "PREFIX=%{prefix}%"]
+  [make "install" "PREFIX=%{prefix}%"]
 ]
 depends: [
   "opam-lib" {>= "1.1.1"}
